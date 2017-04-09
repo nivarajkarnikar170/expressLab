@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Inventor Data</h1>
+    <table>
+        <tr>
+            <th>First</th>
+            <th>Last</th>
+            <th>Year</th>
+            </th>
+            <% for(var i=0; i<data.length; i++) {%>
+                <tr>
+                    <td>
+                        <%= data[i].first %>
+                    </td>
+                    <td>
+                        <%= data[i].last %>
+                    </td>
+                    <td>
+                        <%= data[i].year %>
+                    </td>
+                </tr>
+                <% } %>
+    </table>
+</body>
+</html>
